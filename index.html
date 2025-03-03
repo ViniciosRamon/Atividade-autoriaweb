@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Academia Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Academia Web</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Cadastro de Alunos</h2>
+        <form id="cadastroForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required><br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required><br>
+            <button type="button" onclick="gravarCadastro()">Gravar</button>
+        </form>
+
+        <h2>Alunos Cadastrados</h2>
+        <table>
+            <caption>Registros de Alunos</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaCadastro">
+              
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>IFRN Campus Santa Cruz</p>
+        <p>Trabalho de Autoria Web</p>
+        <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+        <p>Integrantes: Vinícios, Ramon, Vanessa, Letícia, Marcelo, Kauã</p>
+        <p>Referências: [Link 1], [Link 2]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
